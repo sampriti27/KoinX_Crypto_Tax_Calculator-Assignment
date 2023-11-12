@@ -8,13 +8,13 @@ export const getTaxToBePaid = ({ netCapitalGain, annualIncome }) => {
       taxToBePaid = 0.19 * netCapitalGain;
       break;
     case "45":
-      taxToBePaid = 5092 + 0.325 * netCapitalGain;
+      taxToBePaid = 0.325 * netCapitalGain;
       break;
     case "120":
-      taxToBePaid = 29467 + 0.37 * netCapitalGain;
+      taxToBePaid = 0.37 * netCapitalGain;
       break;
     case "180":
-      taxToBePaid = 51667 + 45 * netCapitalGain;
+      taxToBePaid = 45 * netCapitalGain;
       break;
     default:
       break;

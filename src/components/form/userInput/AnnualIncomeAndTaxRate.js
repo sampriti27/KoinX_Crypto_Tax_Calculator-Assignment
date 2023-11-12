@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { getTaxRate } from "../../logics/getTaxRate";
-const AnnualIncomeAndTaxRate = () => {
-  const [annualIncome, setAnnualIncome] = useState(45);
-  const [taxRate, setTaxRate] = useState("");
 
+const AnnualIncomeAndTaxRate = ({
+  annualIncome,
+  setAnnualIncome,
+  taxRate,
+  setTaxRate,
+}) => {
   const handleIncomeChange = (e) => {
     const newAnnualIncome = e.target.value;
     setAnnualIncome(newAnnualIncome);
@@ -24,11 +27,12 @@ const AnnualIncomeAndTaxRate = () => {
           onChange={handleIncomeChange}
           className="bg-[#EFF2F5] border  text-gray-900 text-sm rounded-md  block w-full p-2.5 font-semibold outline-none cursor-pointer"
         >
-          <option value="0"> $0 - $18,200</option>
-          <option value="18"> $18,201 - $45,000</option>
-          <option value="45" selected>
-            $45,001 - $120,000
+          <option value="0" selected>
+            {" "}
+            $0 - $18,200
           </option>
+          <option value="18"> $18,201 - $45,000</option>
+          <option value="45">$45,001 - $120,000</option>
           <option value="120">$120,001 - $180,000</option>
           <option value="180">$180,001+ </option>
         </select>
@@ -36,7 +40,7 @@ const AnnualIncomeAndTaxRate = () => {
 
       <div className="flex flex-row sm:flex-col  sm:justify-center text-gray-900   w-full p-4 outline-none mt-2">
         <p className="text-xs">Tax Rate :</p>
-        <p className="text-xs">{taxRate}</p>
+        <p className="text-xs ml-2 sm:ml-0">{taxRate}</p>
       </div>
     </div>
   );

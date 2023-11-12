@@ -15,7 +15,7 @@ const IncomeAndInvestment = ({
           Enter your Expenses
         </label>
         <input
-          type="text"
+          type="number"
           id="expense"
           className="bg-[#EFF2F5] border text-gray-900 text-sm rounded-md  block w-full p-2.5 outline-none font-bold cursor-pointer"
           placeholder="$5000"

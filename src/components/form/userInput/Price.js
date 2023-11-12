@@ -9,7 +9,7 @@ const Price = ({ costPrice, setCostPrice, sellPrice, setSellPrice }) => {
           Enter purchase price of Crypto
         </label>
         <input
-          type="text"
+          type="number"
           id="cost_price"
           className="bg-[#EFF2F5] border text-gray-900 text-sm rounded-md  block w-full p-2.5 outline-none font-bold cursor-pointer"
           placeholder="$5000"
@@ -23,7 +23,7 @@ const Price = ({ costPrice, setCostPrice, sellPrice, setSellPrice }) => {
           Enter sale price of Crypto
         </label>
         <input
-          type="text"
+          type="number"
           id="sale_price"
           className="bg-[#EFF2F5] border text-gray-900 text-sm rounded-md  block w-full p-2.5 outline-none font-bold cursor-pointer"
           placeholder="$5000"
