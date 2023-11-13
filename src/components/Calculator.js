@@ -9,6 +9,7 @@ import { getCapitalGain } from "./logics/getCapitalGain";
 import { getDiscount } from "./logics/getDiscount";
 import { getNetCapitalGain } from "./logics/getNetCapitalGain";
 import { getTaxToBePaid } from "./logics/getTaxToBePaid";
+import CustomSelect from "./form/yearAndCountry/CustomSelect";
 
 const Calculator = () => {
   const [costPrice, setCostPrice] = useState();
@@ -61,12 +62,13 @@ const Calculator = () => {
 
   return (
     <div className="bg-white rounded-lg  mt-5 flex flex-col items-center  text-[#0F1629] border p-16  container ">
-      <h3 className="font-bold text-center text-2xl w-full mb-2">
+      <h3 className="font-bold text-center text-xl sm:text-2xl w-full mb-2">
         Free Crypto Tax Calculator Australia
       </h3>
       <div className="flex flex-col justify-center items-center">
         <SelectYearCountry />
-        <hr className="border-1 border-solid border-[#C9CFDD99] w-full" />
+        {/* <CustomSelect /> */}
+        <hr className="border-1 border-solid border-[#C9CFDD99] w-full mt-2 sm:mt-0" />
         <Price
           costPrice={costPrice}
           setCostPrice={setCostPrice}

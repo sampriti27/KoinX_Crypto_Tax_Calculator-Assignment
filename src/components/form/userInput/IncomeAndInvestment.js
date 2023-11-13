@@ -9,7 +9,7 @@ const IncomeAndInvestment = ({
   // console.log(investmentType);
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-      <div className="p-4">
+      <div className="sm:p-4">
         {" "}
         <label for="expense" class="block mb-2 text-xs  text-gray-900">
           Enter your Expenses
@@ -36,10 +36,10 @@ const IncomeAndInvestment = ({
                 investmentType === "Lt"
                   ? "border-1 border-[#3E424A]"
                   : "border-[#0052FE] border-2"
-              } border-solid  rounded-md px-4 py-3 items-center gap-2`}
+              } border-solid  rounded-md px-1.5 sm:px-4 py-3 items-center gap-2`}
             >
               <span
-                className={`font-medium   text-sm ${
+                className={`font-medium  text-xs sm:text-sm ${
                   investmentType === "St" ? "text-[#0052FE]" : "text-[#3E424A]"
                 }
                 `}
@@ -78,10 +78,10 @@ const IncomeAndInvestment = ({
                 investmentType === "St"
                   ? "border-1 border-[#3E424A]"
                   : "border-[#0052FE] border-2"
-              } border-solid  rounded-md px-4 py-3 items-center gap-2`}
+              } border-solid  rounded-md px-1.5 sm:px-4 py-3 items-center  gap-2`}
             >
               <span
-                className={`font-medium   text-sm ${
+                className={`font-medium text-xs sm:text-sm ${
                   investmentType === "Lt" ? "text-[#0052FE]" : "text-[#3E424A]"
                 }`}
               >

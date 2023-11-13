@@ -3,7 +3,7 @@ import React from "react";
 const Price = ({ costPrice, setCostPrice, sellPrice, setSellPrice }) => {
   return (
     <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-      <div className="p-4">
+      <div className="py-2  sm:p-4">
         {" "}
         <label for="cost_price" class="block mb-2 text-xs  text-gray-900">
           Enter purchase price of Crypto
@@ -18,7 +18,7 @@ const Price = ({ costPrice, setCostPrice, sellPrice, setSellPrice }) => {
           required
         />
       </div>
-      <div className="p-4">
+      <div className="py-2  sm:p-4">
         <label for="sale_price" class="block mb-2 text-xs  text-gray-900">
           Enter sale price of Crypto
         </label>
