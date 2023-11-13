@@ -31,11 +31,23 @@ A simple web application that allows users in Australia to calculate their crypt
 
 4. **Example Calculation**:
    - Provided an example calculation with detailed results for users to understand the process.
+     
+     - Purchase Price = 50
+     - Sale Price = 100
+     - Expenses = 20
+     - Investment Type = Long Term
+     - Annual Income = ($45001 - $120000).
+
+    - For the above inputs, calculation would be:
+        - Tax Rate = “$5092 + 32.5% of excess over $45000”
+        - Capital Gains Amount = 30
+        - Long Term Capital Gains Discount = 15
+        - Net Capital Gains Amount = 15
+        - Tax you need to pay = 4.875 (which is 32.5% of 15)
 
 5. **GitHub Repository**: Hosted the project on GitHub.
 
-6. **Deployment**:
-   - Deployed the project using Vercel.
+6. **Deployment**: Deployed the project using Vercel.
 
 ### Optional Features 
 
@@ -45,13 +57,11 @@ A simple web application that allows users in Australia to calculate their crypt
 
 ## Usage
 
-1. Access the live demo [here](link-to-live-demo).
+1. Enter the required financial data: purchase price, sale price, expenses, investment type, and annual income.
 
-2. Enter the required financial data: purchase price, sale price, expenses, investment type, and annual income.
+2. The application will calculate gains, tax rate, and taxes based on the provided logic.
 
-3. The application will calculate gains, tax rate, and taxes based on the provided logic.
-
-4. Refer to the example calculation for a better understanding of the process.
+3. Refer to the example calculation for a better understanding of the process.
 
 ## Installation
 
